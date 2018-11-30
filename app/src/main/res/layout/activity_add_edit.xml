@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.AddEditActivity">
+
+    <TextView
+        style="@style/style_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiêu Đề" />
+
+    <EditText
+        android:padding="12dp"
+        android:id="@+id/add_edit_title_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_edit_text"
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollHorizontally="false"
+        />
+
+    <TextView
+        style="@style/style_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Nội Dung" />
+
+    <EditText
+        android:inputType="textCapSentences|textMultiLine"
+        android:scrollHorizontally="false"
+        android:padding="12dp"
+        android:id="@+id/add_edit_content_edt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_edit_text"
+        android:gravity="start"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_edit_cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_cancel_btn"
+            android:text="Huỷ"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/add_edit_save_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_save_btn"
+            android:text="Lưu"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

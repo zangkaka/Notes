@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.giangdm.notes.activities.MainActivity">
+
+    <item
+        android:id="@+id/action_change_type"
+        android:icon="@drawable/ic_grid"
+        android:title="grid"
+        app:showAsAction="ifRoom" />
+</menu>

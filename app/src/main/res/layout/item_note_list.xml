@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_note_layout"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_item_list"
+    android:clickable="true"
+
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/item_note_list_title"
+            style="@style/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/item_note_list_content"
+            style="@style/item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_note_list_title"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:text="Content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/content_layout"
+        android:background="#bdbdbd" />
+</RelativeLayout>
